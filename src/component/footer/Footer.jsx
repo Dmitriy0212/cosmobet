@@ -15,6 +15,7 @@ const Footer = () => {
                 <Link className={classes.contactsInfo} to="/">Rules</Link>
                 <Link className={classes.contactsInfo} to="/">FAQ</Link>
             </div>
+            <p className={classes.copy}>&copy; 2025 [cosmobet.com] All rights reserved.</p>
         </footer>
 
     );
