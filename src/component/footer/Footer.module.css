@@ -1,0 +1,86 @@
+.contentFooter {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    place-content: center;
+    padding: 5px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.visa {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/visa.png');
+    display: flex;
+    width: 166px;
+    height: 33px;
+}
+
+.mastercard {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/mastercard.svg');
+    display: flex;
+    width: 166px;
+    height: 33px;
+}
+
+.skrill {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/skrill.svg');
+    display: flex;
+    width: 166px;
+    height: 33px;
+}
+
+.contentPay {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+    background: #0c0e11;
+}
+
+.contentContacts {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    place-content: center;
+    padding: 5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactsInfo {
+    text-decoration: none;
+    height: 100%;
+    line-height: 2.1333rem;
+    font-size: 1rem;
+    padding: 0 .8rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: .5333rem;
+    font-family: Poppins-Bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 .63rem !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 1.88rem;
+    border-radius: .4667rem;
+    font-weight: bold;
+}

@@ -6,7 +6,7 @@
     place-content: center;
     padding: 5px;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background: #030303;
     top: 100px;
@@ -19,6 +19,7 @@
 }
 
 .contentBlockSilde {
+    border-radius: 15px 15px 0px 0px;
     height: 250px;
     width: 77%;
 }
@@ -29,11 +30,41 @@
     justify-content: center;
     user-select: none;
 }
+
+.title {
+    color: #cf0e48;
+}
+
+.button {
+    display: flex;
+    border: 1px solid rgb(255 2 254);
+    border-radius: 5px;
+    box-shadow: rgb(246 0 255) 3px 3px 3px, rgb(101, 89, 150) -1em 0px 2.4em;
+    background: content-box radial-gradient(#cf0e48, rgb(45 10 10));
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: Poppins-Bold;
+    font-weight: bold;
+}
+
+.button:hover {
+    transition-property: all;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;
+    color: #0ff;
+}
+
 @media (max-width: 1250px) {
     .contentBlockSilde {
         width: 93.3%;
     }
 }
+
 @media (max-width: 1230px) {
     .contentBlockSilde {
         width: 93%;
@@ -123,121 +154,145 @@
         width: 89.5%;
     }
 }
+
 @media (max-width: 930px) {
     .contentBlockSilde {
         width: 89.1%;
     }
 }
+
 @media (max-width: 910px) {
     .contentBlockSilde {
         width: 88.8%;
     }
 }
+
 @media (max-width: 890px) {
     .contentBlockSilde {
         width: 88.5%;
     }
 }
+
 @media (max-width: 870px) {
     .contentBlockSilde {
         width: 88.3%;
     }
 }
+
 @media (max-width: 850px) {
     .contentBlockSilde {
         width: 88%;
     }
 }
+
 @media (max-width: 830px) {
     .contentBlockSilde {
         width: 87.8%;
     }
 }
+
 @media (max-width: 810px) {
     .contentBlockSilde {
         width: 87.5%;
     }
 }
+
 @media (max-width: 790px) {
     .contentBlockSilde {
         width: 87.3%;
     }
 }
+
 @media (max-width: 770px) {
     .contentBlockSilde {
         width: 87%;
     }
 }
+
 @media (max-width: 750px) {
     .contentBlockSilde {
         width: 86.8%;
     }
 }
+
 @media (max-width: 730px) {
     .contentBlockSilde {
         width: 86.5%;
     }
 }
+
 @media (max-width: 710px) {
     .contentBlockSilde {
         width: 86%;
     }
 }
+
 @media (max-width: 690px) {
     .contentBlockSilde {
         width: 85.5%;
     }
 }
+
 @media (max-width: 670px) {
     .contentBlockSilde {
         width: 85%;
     }
 }
+
 @media (max-width: 650px) {
     .contentBlockSilde {
         width: 84%;
     }
 }
+
 @media (max-width: 630px) {
     .contentBlockSilde {
         width: 83%;
     }
 }
+
 @media (max-width: 610px) {
     .contentBlockSilde {
         width: 82%;
     }
 }
+
 @media (max-width: 590px) {
     .contentBlockSilde {
         width: 81%;
     }
 }
+
 @media (max-width: 570px) {
     .contentBlockSilde {
         width: 80%;
     }
 }
+
 @media (max-width: 560px) {
     .contentBlockSilde {
         width: 79.5%;
     }
 }
+
 @media (max-width: 540px) {
     .contentBlockSilde {
         width: 79%;
     }
 }
+
 @media (max-width: 525px) {
     .contentBlockSilde {
         width: 78.5%;
     }
 }
+
 @media (max-width: 505px) {
     .contentBlockSilde {
         width: 78%;
     }
 }
+
 @media (max-width: 490px) {
     .contentBlockSilde {
         width: 77.5%;
@@ -249,26 +304,31 @@
         width: 77%;
     }
 }
+
 @media (max-width: 460px) {
     .contentBlockSilde {
         width: 75.5%;
     }
 }
+
 @media (max-width: 445px) {
     .contentBlockSilde {
         width: 74.8%;
     }
 }
+
 @media (max-width: 430px) {
     .contentBlockSilde {
         width: 74.5%;
     }
 }
+
 @media (max-width: 415px) {
     .contentBlockSilde {
         width: 73.5%;
     }
 }
+
 @media (max-width: 400px) {
     .contentBlockSilde {
         width: 73%;

@@ -103,7 +103,7 @@ export const Carousel = ({ children }) => {
         <div className="main-container">
             <FaChevronLeft className="arrow" onClick={handlLeft} />
             <div className="window">
-                <div className="all-pages-container" style={{ transform: `translateX(${offSet}px)` }}>
+                <div className="all-pages-container" style={{ transform: `translateX(${offSet}px)`}}>
                     {pages}
                 </div>
             </div>
