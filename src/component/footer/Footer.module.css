@@ -84,3 +84,20 @@
     border-radius: .4667rem;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .visa {
+        width: 22%;
+        height: 33px;
+    }
+    
+    .mastercard {
+        width: 50%;
+        height: 33px;
+    }
+    
+    .skrill {
+        width: 24%;
+        height: 33px;
+    }
+}
