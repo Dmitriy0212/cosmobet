@@ -41,8 +41,6 @@ export const Carousel = ({ children }) => {
                 return Math.min(newOffSet, +(screenWidth * 6))
             }
 
-            /*const newOffSet = currentOffSet + screenWidth
-            return Math.min(newOffSet, 0)*/
         })
     }, [screenWidth, windowInnerWidth]);
 
@@ -88,20 +86,20 @@ export const Carousel = ({ children }) => {
 
 
 
-    /* useEffect(() => {
-         const timer = setTimeout(() => {
-             if (offSet === -(screenWidth * 6)) {
-                 setOffSet(0)
-                 console.log(offSet)
-             }
-             handlRight()
-         }, 5000);
- 
-         return () => {
-             clearTimeout(timer);
-         }
- 
-     }, [handlRight, offSet, screenWidth]);*/
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (offSet === -(screenWidth * 6)) {
+                setOffSet(0)
+                console.log(offSet)
+            }
+            handlRight()
+        }, 5000);
+
+        return () => {
+            clearTimeout(timer);
+        }
+
+    }, [handlRight, offSet, screenWidth]);
 
 
     return (
