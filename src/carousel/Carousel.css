@@ -12,19 +12,22 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .all-pages-container {
     height: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 1500ms;
+    transition-timing-function: ease-in-out;
 }
 
 .arrow {
     color: aliceblue;
     cursor: pointer;
-    height: 60px;
-    width: 65px;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;

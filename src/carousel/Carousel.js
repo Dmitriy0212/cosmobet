@@ -1,17 +1,24 @@
 import React from 'react';
-import { useEffect, useState, Children, cloneElement } from 'react'
+import { useEffect, useState, Children, cloneElement, useCallback } from 'react'
 import './Carousel.css'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 
 export const Carousel = ({ children }) => {
-
+    const [offSet, setOffSet] = useState(0)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const handlLeft = () => {
-        console.log(1)
+
+        setOffSet((currentOffSet) => {
+            const newOffSet = currentOffSet + screenWidth
+            return Math.min(newOffSet, 0)
+        })
     }
-    const handlRight = () => {
-        console.log(2)
-    }
+    /*const handlRight = () => {
+        setOffSet((currentOffSet) => {
+            const newOffSet = currentOffSet - screenWidth
+            return Math.max(newOffSet, -(screenWidth * 6))
+        })
+    }*/
     useEffect(() => {
         const changeWidth = () => {
             setScreenWidth(window.innerWidth);
@@ -23,7 +30,19 @@ export const Carousel = ({ children }) => {
             window.removeEventListener('resize', changeWidth);
         };
     }, []);
-    console.log(screenWidth)
+
+
+    const handlRight = useCallback(() => {
+        setOffSet((currentOffSet) => {
+            const newOffSet = currentOffSet - screenWidth
+            return Math.max(newOffSet, -(screenWidth * 6))
+        })
+    }, [screenWidth]);
+
+
+
+
+
     const [pages, setPages] = useState([])
     useEffect(() => {
         setPages(
@@ -31,19 +50,38 @@ export const Carousel = ({ children }) => {
                 return cloneElement(child, {
                     style: {
                         height: '100%',
-                        minWidth: `${screenWidth * 0.94}px`,
-                        maxWidth: `${screenWidth * 0.94}px`
+                        minWidth: `${screenWidth}px`,
+                        maxWidth: `${screenWidth}px`
                     }
                 })
             })
         )
 
     }, [setPages, children, screenWidth])
+
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (offSet === -(screenWidth * 6)) {
+                setOffSet(0)
+                console.log(offSet)
+            }
+            handlRight()
+        }, 5000);
+
+        return () => {
+            clearTimeout(timer);
+        }
+
+    }, [handlRight, offSet, screenWidth]);
+
+
     return (
         <div className="main-container">
             <FaChevronLeft className="arrow" onClick={handlLeft} />
             <div className="window">
-                <div className="all-pages-container">
+                <div className="all-pages-container" style={{ transform: `translateX(${offSet}px)` }}>
                     {pages}
                 </div>
             </div>
