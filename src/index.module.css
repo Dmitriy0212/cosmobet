@@ -1,0 +1,36 @@
+.contentRoot {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentApp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentLinc {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    background: rgb(0, 0, 0);
+    background-size: 15%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    box-sizing: content-box;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+input,
+textarea {
+    min-width: 350px;
+}

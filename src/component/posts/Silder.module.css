@@ -1,0 +1,31 @@
+.contentBlock {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    place-content: center;
+    padding: 5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    background: #030303;
+    top: 100px;
+    position: relative;
+    justify-content: center;
+}
+
+.contentBlockSilder {
+    max-width: 100%;
+}
+
+.contentBlockSilde {
+    height: 250px;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}

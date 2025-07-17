@@ -1,0 +1,208 @@
+.myLink {
+    filter: brightness(0.5);
+    transition: 0.5s;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    border: 1px solid rgb(91, 71, 171);
+    background: rgb(178, 198, 243);
+    height: 100%;
+    justify-content: center;
+    padding: 5px;
+    color: blue;
+}
+
+.myLink:hover {
+    transition: 0.5s;
+    filter: brightness(1);
+}
+
+.myLinkA {
+    background-image: url('../../../public/logo.png');
+    display: flex;
+    width: 166px;
+    height: 33px;
+}
+
+.myLinkA:hover {
+    transition: 0.5s;
+    background: rgb(39 50 75);
+}
+
+.nuv1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 0.5px solid rgb(83, 83, 83);
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 300px;
+}
+
+.nuv2 {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: .5333rem;
+    margin: 10px;
+}
+
+.button {
+    text-decoration: none;
+    height: 100%;
+    line-height: 2.1333rem;
+    font-size: .8rem;
+    padding: 0 .8rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: .5333rem;
+    font-family: Poppins-Bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #030303;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 .63rem !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 1.88rem;
+    border-radius: .4667rem;
+    font-weight: bold;
+}
+
+.registration {
+    background: #cf0e48;
+}
+
+.login {
+    background: #0ff;
+}
+
+.nuvlinc {
+    text-decoration: none;
+    height: 100%;
+    line-height: 2.1333rem;
+    font-size: .8rem;
+    padding: 0 .8rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: .5333rem;
+    font-family: Poppins-Bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 .63rem !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 1.88rem;
+    border-radius: .4667rem;
+    font-weight: bold;
+}
+
+.nuvlinc:hover {
+    color: #0ff;
+}
+
+.header {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    place-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: #030303;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.myconteiner {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-right: 5px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(91, 71, 171);
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: rgb(101, 89, 150) 3px 3px 3px, rgb(101, 89, 150) -1em 0px 2.4em;
+    flex-flow: wrap;
+    place-content: center;
+    padding: 5px;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerToSort {
+    display: none;
+    width: 85%;
+    border: 1px solid rgb(91, 71, 171);
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: rgb(101, 89, 150) 3px 3px 3px, rgb(101, 89, 150) -1em 0px 2.4em;
+    flex-flow: wrap;
+    place-content: center;
+    padding: 10px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.headerToSortVisibl {
+    position: absolute;
+    top: 110%;
+    border: 1px solid #5b47ab;
+    box-shadow: 3px 3px 3px #655996, -1em 0 2.4em #655996;
+    display: flex;
+    flex-flow: wrap;
+    place-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    z-index: 2;
+}
+
+.myLinkOn {
+    position: relative;
+    transition: 1.0s;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    border: 1px solid rgb(91, 71, 171);
+    box-shadow: rgb(101, 89, 150) 0px 3px 10px;
+    background: rgb(178, 198, 243);
+    height: 100%;
+    justify-content: center;
+    padding: 5px;
+    color: blue;
+    align-items: center;
+}
+
+@media (max-width: 655px) {
+    .nuv1 {
+        gap: 0px;
+    }
+}
