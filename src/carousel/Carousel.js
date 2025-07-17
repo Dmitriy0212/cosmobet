@@ -29,7 +29,6 @@ export const Carousel = ({ children }) => {
         setOffSet((currentOffSet) => {
             windowInnerWidth()
             const wind = Math.min(currentOffSet / screenWidth)
-            console.log(-(Math.floor(wind)))
             if (wind <= 0) {
                 currentOffSet = wind * screenWidth
                 const newOffSet = (Math.floor(wind) * screenWidth + screenWidth)
@@ -49,7 +48,6 @@ export const Carousel = ({ children }) => {
         setOffSet((currentOffSet) => {
             windowInnerWidth()
             const wind = Math.min(currentOffSet / screenWidth)
-            console.log(Math.floor(wind))
             if (wind < 0) {
                 currentOffSet = wind * screenWidth
                 const newOffSet = (Math.floor(wind) * screenWidth - screenWidth)
@@ -90,7 +88,6 @@ export const Carousel = ({ children }) => {
         const timer = setTimeout(() => {
             if (offSet === -(screenWidth * 6)) {
                 setOffSet(0)
-                console.log(offSet)
             }
             handlRight()
         }, 5000);

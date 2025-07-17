@@ -38,3 +38,14 @@
     transition: .2s ease;
     box-sizing: border-box;
 }
+
+@media (max-width: 500px) {
+    .main-container {
+        height: 200px;
+    }
+}
+@media (max-width: 00px) {
+    .main-container {
+        height: 180px;
+    }
+}
