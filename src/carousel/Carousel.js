@@ -90,7 +90,7 @@ export const Carousel = ({ children }) => {
                 setOffSet(0)
             }
             handlRight()
-        }, 5000);
+        }, 3000);
 
         return () => {
             clearTimeout(timer);
