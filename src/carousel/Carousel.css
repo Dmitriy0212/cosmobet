@@ -44,7 +44,7 @@
         height: 200px;
     }
 }
-@media (max-width: 00px) {
+@media (max-width: 400px) {
     .main-container {
         height: 180px;
     }

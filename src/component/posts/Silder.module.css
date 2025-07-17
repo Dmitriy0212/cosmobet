@@ -20,7 +20,7 @@
 
 .contentBlockSilde {
     height: 250px;
-    width: 93%;
+    width: 79%;
 }
 
 .item {
@@ -29,41 +29,7 @@
     justify-content: center;
     user-select: none;
 }
-@media (max-width: 850px) {
-    .contentBlockSilde {
-        width: 91%;
-    }
-}
-@media (max-width: 800px) {
-    .contentBlockSilde {
-        width: 89%;
-    }
-}
-@media (max-width: 750px) {
-    .contentBlockSilde {
-        width: 87%;
-    }
-}
-@media (max-width: 700px) {
-    .contentBlockSilde {
-        width: 85%;
-    }
-}
-@media (max-width: 650px) {
-    .contentBlockSilde {
-        width: 83%;
-    }
-}
-@media (max-width: 600px) {
-    .contentBlockSilde {
-        width: 81%;
-    }
-}
-@media (max-width: 550px) {
-    .contentBlockSilde {
-        width: 79%;
-    }
-}
+
 @media (max-width: 500px) {
     .contentBlockSilde {
         width: 77%;
